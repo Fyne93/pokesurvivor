@@ -31,7 +31,7 @@ G.DEX = [
   {"dex":22,"name":"Fearow","types":["normal","flying"],"hp":99,"spd":120,"atk":1.2,"rarity":3,"bst":442,"starter":false,"gen":1},
   {"dex":23,"name":"Ekans","types":["poison"],"hp":86,"spd":101,"atk":1.03,"rarity":1,"bst":288,"starter":false,"gen":1},
   {"dex":24,"name":"Arbok","types":["poison"],"hp":97,"spd":112,"atk":1.22,"rarity":3,"bst":448,"starter":false,"gen":1},
-  {"dex":25,"name":"Pikachu","types":["electric"],"hp":86,"spd":116,"atk":1.0,"rarity":2,"bst":320,"starter":false,"gen":1},
+  {"dex":25,"name":"Luffy","types":["electric"],"hp":86,"spd":116,"atk":1.0,"rarity":2,"bst":320,"starter":false,"gen":1},
   {"dex":26,"name":"Raichu","types":["electric"],"hp":97,"spd":124,"atk":1.2,"rarity":3,"bst":485,"starter":false,"gen":1},
   {"dex":27,"name":"Sandshrew","types":["ground"],"hp":92,"spd":95,"atk":1.11,"rarity":1,"bst":300,"starter":false,"gen":1},
   {"dex":28,"name":"Sandslash","types":["ground"],"hp":104,"spd":105,"atk":1.25,"rarity":3,"bst":450,"starter":false,"gen":1},
