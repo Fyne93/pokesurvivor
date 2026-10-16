@@ -112,7 +112,7 @@ G.Game = (() => {
     runReal = performance.now(); tampered = false;
 
     pl = new G.Player(mon, perks, !!save.partnerShiny && G.DB.ownsShiny(mon.dex));
-    banked = { t1: 5000, t10: 80 };
+    banked = { t1: 0, t10: 0 };
     caught = [];
     // Atajos: movimientos con hueco fijo (save.pbind[dex] = [id del 1, id del 2, ...]),
     // antes de aprender nada: addMove ya los coloca.
@@ -165,6 +165,11 @@ G.Game = (() => {
     return { time, level: pl.level, xp: pl.xp, xpNext: pl.xpNext, kills: pl.kills, bosses: pl.bosses, coins: pl.coins, t1: pl.t1, t10: pl.t10 };
   }
   function summary() { return { t: time, ki: pl.kills, bo: pl.bosses, co: pl.coins, lv: pl.level, t1: pl.t1, t10: pl.t10 }; }
+if (G.DB && G.DB.save) {
+    G.DB.save.tickets = 99999; // Te donne 99 999 tickets Gacha !
+    if (!G.DB.save.dex) G.DB.save.dex = [];
+    if (!G.DB.save.dex.includes(25)) G.DB.save.dex.push(25); // Débloque Luffy (ID 25) d'office !
+}
 
   /** Lo que el cooperativo necesita del juego. */
   /**
